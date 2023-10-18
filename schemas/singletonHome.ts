@@ -17,40 +17,17 @@ export default defineType({
   ],
   fields: [
     defineField({
-      name: 'heroImage',
-      title: 'Hero Image',
-      description: 'Hero Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      group: 'content',
-    }),
-    defineField({
-      name: 'images',
-      title: 'Images',
+      name: 'sections',
+      title: 'Sections',
       type: 'array',
       group: 'content',
       of: [
         {
-          name: 'image',
-          type: 'image',
-          title: 'Image',
-          options: {
-            hotspot: true,
-          },
-          fields: [
-            {
-              name: 'alt',
-              type: 'string',
-              title: 'Alternative text',
-            },
-          ],
+          name: 'section',
+          type: 'section',
+          title: 'Section',
         },
       ],
-      options: {
-        layout: 'grid',
-      },
     }),
     /* SEO fields...*/
     defineField({
