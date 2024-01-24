@@ -5,4 +5,8 @@ export const SanityStructure = (S) =>
       S.listItem()
         .title('Home')
         .child(S.document().schemaType('home').documentId('home').title('Home')),
+      S.divider(),
+      S.listItem()
+        .title('Evening')
+        .child(S.document().schemaType('evening').documentId('evening').title('Evening')),
     ])
